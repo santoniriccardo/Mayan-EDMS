@@ -20,12 +20,12 @@ body {
 }
 
 #fancybox-left-ico {
- left: 20px;
+    left: 20px;
 }
 
 #fancybox-right-ico {
- right: 20px;
- left: auto;
+    right: 20px;
+    left: auto;
 }
 
 .mayan-page-wrapper-interactive {
@@ -33,7 +33,8 @@ body {
 }
 
 #carousel-container {
-    overflow-x: scroll; height: 500px;
+    overflow-x: scroll;
+    height: 500px;
 }
 
 #carousel-container img {
@@ -98,7 +99,7 @@ hr {
 }
 
 .radio ul li {
-    list-style-type:none;
+    list-style-type: none;
 }
 
 a i {
@@ -115,8 +116,8 @@ a i {
 }
 
 /* Notifications */
-#toast-container > div {
-  opacity: 1;
+#toast-container>div {
+    opacity: 1;
 }
 
 /* User menu */
@@ -129,9 +130,9 @@ a i {
 /* Make facet list group horizontal on small or smaller */
 @media (max-width: 767px) {
     ul.list-group:after {
-      clear: both;
-      display: block;
-      content: "";
+        clear: both;
+        display: block;
+        content: "";
     }
 
     .list-group-item {
@@ -141,40 +142,50 @@ a i {
 
 /* Collapse navigation on medium or smaller */
 @media (max-width: 991px) {
-  .navbar-header {
-      float: none;
-  }
-  .navbar-left,.navbar-right {
-      float: none !important;
-  }
-  .navbar-toggle {
-      display: block;
-  }
-  .navbar-collapse {
-      border-top: 1px solid transparent;
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  }
-  .navbar-fixed-top {
-      top: 0;
-      border-width: 0 0 1px;
-  }
-  .navbar-collapse.collapse {
-      display: none!important;
-  }
-  .navbar-nav {
-      float: none!important;
-      margin-top: 7.5px;
-  }
-  .navbar-nav>li {
-      float: none;
-  }
-  .navbar-nav>li>a {
-      padding-top: 10px;
-      padding-bottom: 10px;
-  }
-  .collapse.in{
-      display:block !important;
-  }
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-left,
+    .navbar-right {
+        float: none !important;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-nav {
+        float: none !important;
+        margin-top: 7.5px;
+    }
+
+    .navbar-nav>li {
+        float: none;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .collapse.in {
+        display: block !important;
+    }
 }
 
 /* List item view */
@@ -184,11 +195,11 @@ a i {
     transition: all .2s ease;
 }
 
-.panel-item > .panel-heading {
+.panel-item>.panel-heading {
     padding: 1px 10px;
 }
 
-.panel-item > .panel-body {
+.panel-item>.panel-body {
     padding: 10px;
     word-wrap: break-word;
 }
@@ -209,8 +220,12 @@ a i {
     box-shadow: 0px 0px 3px #18bc9c, 10px 10px 20px #000000, 0px 0px 8px #000000;
 }
 
-.panel-item:not(.panel-highlighted):hover  {
+.panel-item:not(.panel-highlighted):hover {
     box-shadow: 0px 0px 8px #000000;
+}
+
+.dashboard-widget .panel-footer {
+    color: black;
 }
 
 /* Content */
@@ -231,7 +246,7 @@ a i {
     border: 1px solid lightgray;
 }
 
-.spinner-container > .spinner-icon {
+.spinner-container>.spinner-icon {
     margin-left: 4px;
     margin-top: 3px;
 }
@@ -242,12 +257,12 @@ a i {
 }
 
 .thin_border-thumbnail {
-  display: block;
-  max-width: 100%;
-  max-height: 200px;
-  width: auto;
-  height: auto;
-  margin: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    margin: auto;
 }
 
 /* Must go after .thin_border-thumbnail */
@@ -279,6 +294,7 @@ a i {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     to {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
@@ -290,6 +306,7 @@ a i {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
     to {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
@@ -298,7 +315,7 @@ a i {
 
 /* Imitate the default look of Django's debug template */
 .pre-server-error {
-    background-color:#ffe7ae;
+    background-color: #ffe7ae;
     color: black;
     font-size: 110%;
     font-weight: bold;
@@ -308,16 +325,15 @@ a i {
  * Main content
  */
 
-.main {
-}
+.main {}
 
 /* Remove scroll bar caused by bootstraps -15px on .row margins */
 .zero-margin {
     margin-right: 0;
     margin-left: 0;
 
-    > .col,
-    > [class*="col-"] {
+    >.col,
+    >[class*="col-"] {
         padding-right: 0;
         padding-left: 0;
     }
@@ -348,8 +364,7 @@ a i {
     padding-right: 0px;
 }
 
-#sidebar {
-}
+#sidebar {}
 
 @media (min-width: 768px) {
     #sidebar {
@@ -406,11 +421,11 @@ a i {
     color: #fff;
 }
 
-.btn-list > .btn {
+.btn-list>.btn {
     margin-bottom: 2px;
 }
 
-.btn-list > .btn:not(:last-child) {
+.btn-list>.btn:not(:last-child) {
     margin-right: 4px;
 }
 
@@ -423,7 +438,7 @@ a i {
  * Hide default border to remove 1px line.
  */
 .navbar-fixed-top {
-  border: 0;
+    border: 0;
 }
 
 
@@ -477,7 +492,7 @@ a i {
 }
 
 .overlay-gray {
-    background-color: rgba(0,0,0,0.25);
+    background-color: rgba(0, 0, 0, 0.25);
     display: block;
     height: 100%;
     position: fixed;
@@ -521,11 +536,10 @@ a i {
 }
 
 .main .page-header {
-  margin-top: 0;
+    margin-top: 0;
 }
 
-.navbar-brand {
-}
+.navbar-brand {}
 
 .navbar-brand {
     outline: none;
@@ -566,12 +580,12 @@ a i {
     background-color: #517394;
 }
 
-#accordion-sidebar > .panel > div > .panel-body > ul > li > a:hover {
+#accordion-sidebar>.panel>div>.panel-body>ul>li>a:hover {
     background-color: #517394;
 }
 
-#accordion-sidebar > .panel > div > .panel-body > ul > li.active {
-   background: #1a242f;
+#accordion-sidebar>.panel>div>.panel-body>ul>li.active {
+    background: #1a242f;
 }
 
 #accordion-sidebar .panel-title {
@@ -624,10 +638,11 @@ a i {
 
 /* List toolbar affix */
 #list-toolbar.affix {
-    top: 60px;  /* OuterHeight of navbar */
+    top: 60px;
+    /* OuterHeight of navbar */
     z-index: 90;
 }
 
-.dropdown-menu > li > a {
+.dropdown-menu>li>a {
     color: #585e5e;
 }
